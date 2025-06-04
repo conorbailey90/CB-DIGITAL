@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'FKGroteskNeue-Regular';
+  src: url('/fonts/FKGroteskNeue-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Improves loading performance */
+}
+
+@font-face {
+  font-family: 'Morganite';
+  src: url('/fonts/Morganite-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Improves loading performance */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  font-family: 'FKGroteskNeue-Regular';
+  overscroll-behavior: none;
+}
+
+.logo{
+    font-family: 'Morganite';
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --white: #FFFFFF;
+  --dark-green: #2F4F4F;
+  --main-bg: #161616;
+  --forest-green: #4A7043;
+  --light-green: #E8F0E8;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*
+
+.bg-dark-green {
+  background-color: var(--dark-green);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+.bg-main-bg {
+  background-color: var(--main-bg);
+}
+
+
+@media (max-width: 768px){
+
+  .navLinks{
+    position: absolute;
+    left:  0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    z-index: 3;
   }
+
+
+  .navActive{
+    /* background-color: ; */
+  }
+
+
+
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
+
+
