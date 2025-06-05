@@ -91,6 +91,7 @@ const Navbar = () => {
           <li><Link onClick={menuClose}  className='logo text-6xl uppercase' href="/#hero">Home</Link></li>
           <li><Link onClick={menuClose}  className='logo text-6xl uppercase' href="/#about">About</Link></li>
           <li><Link onClick={menuClose}  className='logo text-6xl uppercase' href="/#projects">Projects</Link></li>
+          <li><Link onClick={menuClose}  className='logo text-6xl uppercase' href="/#services">Services</Link></li>
           <li><Link onClick={menuClose}  className='logo text-6xl uppercase' href="/#blog">Blog</Link></li>
           <li><Link onClick={menuClose}  className='logo text-6xl uppercase' href="/contact">Contact</Link></li>
         </ul>

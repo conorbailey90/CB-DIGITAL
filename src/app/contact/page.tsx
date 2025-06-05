@@ -218,14 +218,6 @@ export default function Contact() {
             </form>
           </div>
 
-          {/* Additional info */}
-          <div className="col-span-12 mt-12">
-            <p className="text-sm tracking-tighter text-black max-w-2xl">
-              Looking for a custom website that drives results? I specialize in creating clean, fast, and mobile-friendly websites for small businesses. 
-              Whether you need a brand new site, want to redesign your existing one, or need custom automation tools to streamline your operations, 
-              I'm here to help your business grow online. Get in touch today for a free consultation.
-            </p>
-          </div>
         </div>
       </div>
       <Toaster

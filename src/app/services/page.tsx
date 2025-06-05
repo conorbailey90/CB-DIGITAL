@@ -1,66 +1,103 @@
 'use client'
 
-import { Code, Palette, Server, LayoutGrid, CheckCircle, ArrowRight, Users, Zap, Shield, TrendingUp } from 'lucide-react'
+import { Code, Palette, Server, LayoutGrid, CheckCircle, ArrowRight, Users, Zap, Shield, TrendingUp, Star } from 'lucide-react'
 import Link from 'next/link'
 
 function ServicesOverview() {
   const services = [
     {
       title: 'Web Design',
-      description: 'Strategic design solutions that elevate your brand and engage your audience through thoughtful user experiences and UI/UX design.',
+      description: 'We specialize in crafting clean, minimal, and functional websites that put your business/brand front and center. My focus is on creating intuitive, user-friendly designs with sleek UI/UX that drive engagement and deliver results.',
       icon: <Palette className="w-6 h-6" />,
-      features: [
-        'Brand Identity & Visual Design',
-        'User Experience (UX) Design', 
-        'User Interface (UI) Design',
-        'Responsive Design Systems',
-        'Wireframing & Prototyping'
-      ],
-      process: 'We start with understanding your brand and audience, then create wireframes and prototypes before delivering pixel-perfect designs that convert.',
-      timeline: '2-4 weeks'
+      features : [
+        'Clean & Impactful Brand Identity',
+        'Intuitive UX Design',
+        'Minimalist UI Design',
+        'Responsive & Streamlined Design Systems',
+        'Strategic Wireframing & Prototyping'
+        ],
+      process: 'We begin by diving deep into your brand and audience to align with your vision. Next, we craft clear, functional wireframes and prototypes to lay a solid foundation. Finally, we deliver a fully functional, clean, minimal, and high-performing website that engages and converts.',
     },
     {
       title: 'Development',
-      description: 'Custom web applications and websites built with modern technologies and best practices for optimal performance.',
+      description: 'We develop custom websites and web applications with tailored features designed to meet your unique needs, emphasizing clean, minimal, and functional design. Using modern technologies and best practices, we deliver fast, reliable, and high-performing solutions that drive results.',
       icon: <Code className="w-6 h-6" />,
-      features: [
-        'Custom Web Applications',
-        'Modern Frontend Development',
-        'Backend API Development',
-        'Database Design & Integration',
-        'Performance Optimization'
-      ],
-      process: 'From planning to deployment, we build scalable solutions using cutting-edge technologies like React, Next.js, and modern backend frameworks.',
+      features : [
+        'Tailored Website Features',
+        'User-Friendly Website Interfaces',
+        'Custom Data Management Solutions',
+        'Seamless Website Integrations',
+        'Fast & Reliable Website Performance'
+        ],
+      process: 'From concept to launch, we create tailored, user-friendly websites with custom features, built using modern tools to ensure fast, reliable, and scalable results that grow with your business.',
       timeline: '4-12 weeks'
     },
     {
       title: 'Hosting',
-      description: 'Reliable, secure web hosting solutions with fast performance, regular backups, and 24/7 monitoring for your peace of mind.',
+      description: 'We provide reliable, secure web hosting with fast performance and 24/7 monitoring, ensuring your website stays online and runs smoothly for your peace of mind.',
       icon: <Server className="w-6 h-6" />,
       features: [
-        'High-Performance Servers',
-        'SSL Certificates & Security',
-        'Automated Daily Backups',
-        '24/7 Monitoring & Support',
-        'CDN & Speed Optimization'
-      ],
-      process: 'We handle all technical aspects of hosting, from server setup to ongoing maintenance, so you can focus on your business.',
-      timeline: 'Ongoing support'
+        'Fast & Reliable Website Performance',
+        'Top-Notch Website Security',
+        'Easy Website Management Tools',
+        'Round-the-Clock Monitoring & Support',
+        ],
+      process: 'We take care of all hosting details, from setup to ongoing support, so you can focus on growing your business with a fast, secure, and reliable website.'
     },
     {
       title: 'Digital Strategy',
-      description: 'Data-driven approach to digital presence with SEO best practices, ensuring your platform aligns with business goals and drives organic growth.',
+      description: 'We create simple, effective plans to boost your online presence, making your website easier to find on search engines and tailored to help your business grow.',
       icon: <LayoutGrid className="w-6 h-6" />,
       features: [
         'SEO Strategy & Implementation',
         'Analytics & Performance Tracking',
         'Content Strategy Planning',
         'Conversion Rate Optimization',
-        'Digital Marketing Integration'
+
       ],
-      process: 'We analyze your market, optimize for search engines, and create strategies that drive measurable results and sustainable growth.',
-      timeline: '2-3 weeks setup, ongoing optimization'
+      process: 'We study your audience, make your website easier to find on search engines, and build clear, practical plans to drive real results and steady business growth.',
+   
     },
+  ]
+
+  const pricingPlans = [
+    {
+      name: 'Essential',
+      price: '£500',
+      description: 'Perfect for small businesses and personal brands looking to establish their online presence.',
+      features: [
+        'Custom Responsive Design',
+        'Up to 5 Pages',
+        'SEO Optimization',
+        'Mobile-First Approach',
+        'Contact Forms',
+        'Social Media Integration',
+        '1 Year Free Hosting',
+        'Basic Analytics Setup',
+        '2 Rounds of Revisions'
+      ],
+      timeline: '2-4 weeks',
+      popular: false
+    },
+    {
+      name: 'Professional',
+      price: '£800',
+      description: 'Ideal for growing businesses requiring advanced functionality and database integration.',
+      features: [
+        'Everything in Essential',
+        'Custom Database Integration',
+        'Content Management System',
+        'Performance Optimization',
+        '1 Year Free Hosting',
+        'Google Analytics & Search Console',
+        'Email Marketing Integration',
+        'Backup & Security Features',
+        'Unlimited Revisions',
+        '1 Month Post-Launch Support'
+      ],
+      timeline: '4-8 weeks',
+      popular: true
+    }
   ]
 
   const benefits = [
@@ -133,17 +170,87 @@ function ServicesOverview() {
                   <h4 className="font-semibold mb-2 text-gray-900">Our Process:</h4>
                   <p className="text-sm text-gray-600 leading-relaxed">{service.process}</p>
                 </div>
-
-                <div className="flex items-center justify-between mb-6">
-                  <div>
-                    <span className="text-sm font-semibold text-gray-900">Timeline: </span>
-                    <span className="text-sm text-gray-600">{service.timeline}</span>
-                  </div>
-                </div>
-
-
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="w-full flex justify-center py-16 border-t border-black/5">
+        <div className="w-[95%] max-w-container">
+          <div className="text-center mb-12">
+            <h2 className="mb-4 tracking-normal logo uppercase text-5xl">Pricing Plans</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Transparent pricing with no hidden fees. Choose the package that best fits your business needs and budget.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {pricingPlans.map((plan, index) => (
+              <div 
+                key={plan.name}
+                className={`relative p-8 shadow-[0_0_0_1px_#c0c0c0] bg-white transition-all duration-300 ${
+                  plan.popular ? 'shadow-[0_0_0_2px_#000]' : ''
+                }`}
+              >
+                {plan.popular && (
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <div className="bg-black text-white px-4 py-1 text-sm flex items-center">
+                      <Star className="w-3 h-3 mr-1" />
+                      MOST POPULAR
+                    </div>
+                  </div>
+                )}
+                
+                <div className="mb-6">
+                  <h3 className="text-4xl mb-2 tracking-normal logo uppercase">{plan.name}</h3>
+                  <div className="mb-4">
+                    <span className="text-5xl font-bold logo tracking-wide">{plan.price}</span>
+                    <span className="text-gray-500 ml-2">starting from</span>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed">{plan.description}</p>
+                </div>
+                
+                <div className="mb-6">
+                  <h4 className="font-semibold mb-3 text-gray-900">What's Included:</h4>
+                  <ul className="space-y-2">
+                    {plan.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-center text-sm text-gray-600">
+                        <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mb-6 p-4 bg-gray-50 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-gray-900">Timeline:</h4>
+                  <p className="text-sm text-gray-600">{plan.timeline}</p>
+                </div>
+
+                <Link href="/contact">
+                  <button className={`w-full cursor-pointer px-8 py-3 transition-all ${
+                    plan.popular 
+                      ? 'bg-black text-white hover:bg-gray-800' 
+                      : 'border border-black text-black hover:bg-black hover:text-white'
+                  }`}>
+                    Get Started
+                  </button>
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-4">
+              Need something custom? We offer bespoke solutions tailored to your specific requirements.
+            </p>
+            <Link href="/contact">
+              <button className="cursor-pointer px-8 py-3 border border-black text-black hover:bg-black hover:text-white transition-all">
+                Request Custom Quote
+              </button>
+            </Link>
           </div>
         </div>
       </section>
