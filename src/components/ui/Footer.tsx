@@ -37,7 +37,7 @@ export function Footer() {
  
             <div className="col-span-12 md:col-span-4 space-y-6">
               <Link href="/" className="tracking-normal logo uppercase text-5xl">
-                PRISM DIGITAL
+                CB DIGITAL
               </Link>
               <div className="space-y-2">
                 <p className="text-sm text-white/70">
