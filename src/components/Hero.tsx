@@ -50,7 +50,7 @@ export default function Hero() {
             </div>
             <p className="col-start-1 col-span-12 md:col-span-4 md:col-start-9 text-sm mb-2 tracking-tighter text-black">
               Custom websites and smart automation built to grow your business.
-              I'm Conor Bailey, a freelance web designer and developer behind CB Digital. I build clean, fast, and mobile-friendly websites that help small businesses stand out online, attract more customers, and save time with custom automation tools.
+              I&apos;m Conor Bailey, a freelance web designer and developer behind CB Digital. I build clean, fast, and mobile-friendly websites that help small businesses stand out online, attract more customers, and save time with custom automation tools.
             </p>
         </div>
       </div>

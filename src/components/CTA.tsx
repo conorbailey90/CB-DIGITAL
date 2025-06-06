@@ -14,7 +14,7 @@ export default function CTA() {
         >
           <h2 className="text-h3 mb-4">Ready to Skyrocket Your Online Presence?</h2>
           <p className="text-foreground/70 mb-8">
-            Let’s craft a stunning website that drives results.
+            Let&apos;s craft a stunning website that drives results.
           </p>
           <Link 
             href="/contact"

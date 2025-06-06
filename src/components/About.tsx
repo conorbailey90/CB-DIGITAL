@@ -8,10 +8,10 @@ export default function About() {
         <div className="col-span-12 md:col-span-6">
           <p className=" mb-4 text-sm md:text-base">
             <strong>Bespoke websites designed to elevate your business.</strong> <br />
-            CB Digital specialises in clean, minimal web design that communicates clearly and looks sharp on every device. Each website is purpose-built — no templates, no clutter — just custom design that reflects your brand and delivers a smooth, engaging user experience.          </p>
+            CB Digital specialises in clean, minimal web design that communicates clearly and looks sharp on every device. Each website is purpose-built — no templates, no clutter — just custom design that reflects your brand and delivers a smooth, engaging user experience.</p>
           <p className="mb-4 text-sm md:text-base">
             <strong>Modern development with performance in mind.</strong> <br />
-            Every site is built using best-in-class tools and frameworks to ensure fast load times, responsive layouts, and long-term maintainability. Whether it’s a simple brochure site or a more complex solution, development is handled with precision to ensure performance, accessibility, and SEO readiness from day one.          </p>
+            Every site is built using best-in-class tools and frameworks to ensure fast load times, responsive layouts, and long-term maintainability. Whether it&apos;s a simple brochure site or a more complex solution, development is handled with precision to ensure performance, accessibility, and SEO readiness from day one.</p>
           <p className=" mb-4 text-sm md:text-base">
             <strong>Fully managed hosting and ongoing support.</strong><br />
             CB Digital offers reliable, secure hosting options with technical support and site maintenance included. From setup to launch and beyond, everything is handled to keep your website running smoothly — including updates, backups, and performance monitoring — so you can focus on your business.

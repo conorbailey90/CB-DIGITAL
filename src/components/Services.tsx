@@ -1,6 +1,6 @@
 'use client'
 
-import { Code, Palette, Lightbulb, LayoutGrid, Server } from 'lucide-react'
+import { Code, Palette, LayoutGrid, Server } from 'lucide-react'
 import Link from 'next/link'
 
 function Services() {
