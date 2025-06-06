@@ -45,7 +45,7 @@ const Project = ({ title, image, services }: ProjectProps) => {
       <div className=' absolute bottom-[2.5%] right-[2.5%] z-10 '>
         <ul className='flex gap-2'>
           {services.map(s => (
-            <li className='text-white text-xs text-right p-2 backdrop-blur-md bg-black/40 border border-white/10'>{s}</li>
+            <li key={s} className='text-white text-xs text-right p-2 backdrop-blur-md bg-black/40 border border-white/10'>{s}</li>
           ))}
         </ul>
         

@@ -1,6 +1,6 @@
 'use client'
 
-import { Code, Palette, Server, LayoutGrid, CheckCircle, ArrowRight, Users, Zap, Shield, TrendingUp, Star } from 'lucide-react'
+import { Code, Palette, Server, LayoutGrid, CheckCircle, Users, Zap, Shield, TrendingUp, Star } from 'lucide-react'
 import Link from 'next/link'
 
 function ServicesOverview() {
@@ -30,7 +30,6 @@ function ServicesOverview() {
         'Fast & Reliable Website Performance'
         ],
       process: 'From concept to launch, we create tailored, user-friendly websites with custom features, built using modern tools to ensure fast, reliable, and scalable results that grow with your business.',
-      timeline: '4-12 weeks'
     },
     {
       title: 'Hosting',
@@ -76,7 +75,6 @@ function ServicesOverview() {
         'Basic Analytics Setup',
         '2 Rounds of Revisions'
       ],
-      timeline: '2-4 weeks',
       popular: false
     },
     {
@@ -213,7 +211,7 @@ function ServicesOverview() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold mb-3 text-gray-900">What's Included:</h4>
+                  <h4 className="font-semibold mb-3 text-gray-900">What&apos;s Included:</h4>
                   <ul className="space-y-2">
                     {plan.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center text-sm text-gray-600">
@@ -286,7 +284,7 @@ function ServicesOverview() {
         <div className="w-[95%] max-w-container text-center">
           <h2 className="mb-6 tracking-normal logo uppercase text-5xl">Ready to Get Started?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Let's discuss your project and create something exceptional together.
+            Let&apos;s discuss your project and create something exceptional together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

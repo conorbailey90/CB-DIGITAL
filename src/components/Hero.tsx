@@ -9,7 +9,6 @@ export default function Hero() {
   const trigger = useRef<HTMLDivElement | null>(null);
   const target = useRef<HTMLDivElement | null>(null);
 
-  const triggerId = `hero-image`
   useEffect(() => {
     if (trigger.current && target.current) {
       const animation = gsap.fromTo(
@@ -19,7 +18,6 @@ export default function Hero() {
           yPercent: -15, // End position
           ease: 'none',
           scrollTrigger: {
-            id: triggerId, // Assign the ID for ScrollTrigger
             trigger: trigger.current,
             start: 'top bottom',
             end: 'bottom top',
