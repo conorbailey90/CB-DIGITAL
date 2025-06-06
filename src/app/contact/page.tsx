@@ -72,7 +72,7 @@ export default function Contact() {
         <div className="w-[95%] grid grid-cols-12 auto-rows-min pt-24 pb-12 md:pt-24 md:pb-12">
           {/* Main heading */}
           <div className="col-span-12 mb-8">
-            <h1 className="text-6xl mb-4 tracking-normal text-black logo uppercase lg:text-8xl">LET'S WORK TOGETHER</h1>
+            <h1 className="text-6xl mb-4 tracking-normal text-black logo uppercase lg:text-8xl">LET&apos;S WORK TOGETHER</h1>
           </div>
 
           {/* Contact information */}

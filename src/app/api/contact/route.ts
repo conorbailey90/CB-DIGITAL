@@ -14,6 +14,7 @@ export async function POST(request: { json: () => PromiseLike<{ firstName: strin
 
     return Response.json({ success: true });
   } catch (error) {
+    console.log(error)
     return Response.json({ error: 'Failed to save' }, { status: 500 });
   }
 }

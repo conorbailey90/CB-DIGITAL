@@ -185,7 +185,7 @@ function ServicesOverview() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {pricingPlans.map((plan, index) => (
+            {pricingPlans.map((plan) => (
               <div 
                 key={plan.name}
                 className={`relative p-8 shadow-[0_0_0_1px_#c0c0c0] bg-white transition-all duration-300 ${
