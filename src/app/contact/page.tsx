@@ -28,6 +28,7 @@ export default function Contact() {
 
       if (response.ok) {
         const result = await response.json();
+        console.log(result)
         toast.success('Message sent successfully!', {
           position: 'top-right',
           duration: 3000,

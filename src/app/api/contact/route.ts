@@ -3,7 +3,7 @@ import { neon } from '@neondatabase/serverless';
 
 const sql = neon(process.env.DATABASE_URL!);
 
-export async function POST(request: { json: () => PromiseLike<{ firstName: any; lastName: any; email: any; company: any; service: any; message: any; }> | { firstName: any; lastName: any; email: any; company: any; service: any; message: any; }; }) {
+export async function POST(request: { json: () => PromiseLike<{ firstName: string; lastName: string; email: string; company: string; service: string; message: string; }> | { firstName: string; lastName: string; email: string; company: string; service: string; message: string; }; }) {
   const { firstName, lastName, email, company, service, message } = await request.json();
     console.log(firstName)
   try {

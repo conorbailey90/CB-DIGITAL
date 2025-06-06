@@ -153,7 +153,7 @@ function ServicesOverview() {
                 <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold mb-3 text-gray-900">What's Included:</h4>
+                  <h4 className="font-semibold mb-3 text-gray-900">What&apos;s Included:</h4>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center text-sm text-gray-600">
