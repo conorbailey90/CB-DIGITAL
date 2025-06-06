@@ -50,7 +50,9 @@ export default function Contact() {
           className: 'custom-toast custom-toast-error',
         });
       }
+    
     } catch (error) {
+        console.log(error)
       toast.error('An error occurred. Please try again later.', {
         position: 'top-right',
         duration: 3000,
