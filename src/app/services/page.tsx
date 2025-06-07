@@ -91,7 +91,6 @@ function ServicesOverview() {
         'Email Marketing Integration',
         'Backup & Security Features',
         'Unlimited Revisions',
-        '1 Month Post-Launch Support'
       ],
       timeline: '4-8 weeks',
       popular: true
@@ -222,10 +221,7 @@ function ServicesOverview() {
                   </ul>
                 </div>
 
-                <div className="mb-6 p-4 bg-gray-50 rounded-lg">
-                  <h4 className="font-semibold mb-2 text-gray-900">Timeline:</h4>
-                  <p className="text-sm text-gray-600">{plan.timeline}</p>
-                </div>
+            
 
                 <Link href="/contact">
                   <button className={`w-full cursor-pointer px-8 py-3 transition-all ${

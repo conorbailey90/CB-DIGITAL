@@ -41,14 +41,14 @@ export default function Hero() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#f5f7fa] to-[#c3cfe2] " />
         <div className="w-[95%] grid grid-cols-12 auto-rows-min pt-24 pb-12 md:pt-24 md:pb-12">
             <div className=" col-span-6">
-              <h1 className="text-6xl mb-4 tracking-normal text-black logo uppercase lg:text-8xl">CB DIGITAL</h1>
+              <h1 className="text-8xl mb-4 tracking-normal text-black logo uppercase">CB DIGITAL</h1>
               <h5 className="tracking-tighter">Billericay, UK</h5>
               <Time />
   
             </div>
             <p className="col-start-1 col-span-12 md:col-span-4 md:col-start-9 text-sm mb-2 tracking-tighter text-black">
-              Custom websites and smart automation built to grow your business.
-              I&apos;m Conor Bailey, a freelance web designer and developer behind CB Digital. I build clean, fast, and mobile-friendly websites that help small businesses stand out online, attract more customers, and save time with custom automation tools.
+              <strong className="text-base ">Elevate Your Business with Sleek, Modern Web Design</strong><br /><br />
+              <span className="">We create clean, fast, and mobile-friendly websites with reliable hosting solutions, designed to showcase your small business with clarity and style, effortlessly attracting and engaging your customers.</span>
             </p>
         </div>
       </div>

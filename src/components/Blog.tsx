@@ -39,9 +39,9 @@ export default function Blog() {
                 className="w-full h-48 object-cover"
               />
               <div className="py-6">
-                <p className="text-sm text-forest-green mb-2">{post.date}</p>
-                <h3 className="text-xl font-bold mb-2">{post.title}</h3>
-                <p>{post.excerpt}</p>
+              
+                <h3 className="text-xl tracking-tight font-bold mb-2">{post.title}</h3>
+                <p className="tracking-tight">{post.excerpt}</p>
               </div>
             </div>
           ))}
