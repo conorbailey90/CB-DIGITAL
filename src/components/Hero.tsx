@@ -47,8 +47,8 @@ export default function Hero() {
   
             </div>
             <p className="col-start-1 col-span-12 md:col-span-4 md:col-start-9 text-sm mb-2 tracking-tighter text-black">
-              <strong className="text-base ">Elevate Your Business with Sleek, Modern Web Design</strong><br /><br />
-              <span className="">We create clean, fast, and mobile-friendly websites with reliable hosting solutions, designed to showcase your small business with clarity and style, effortlessly attracting and engaging your customers.</span>
+              <strong className="text-base text-balance">Elevate Your Business with Sleek, Modern Web Design</strong><br /><br />
+              <span className="text-balance">We create clean, fast, and mobile-friendly websites with reliable hosting solutions, designed to showcase your small business with clarity and style, effortlessly attracting and engaging your customers.</span>
             </p>
         </div>
       </div>
