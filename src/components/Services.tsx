@@ -48,7 +48,7 @@ function Services() {
                     </div>
                     <span className="block text-sm mb-2">0{index + 1}</span>
                     <h3 className="text-4xl mb-4 tracking-normal logo uppercase">{service.title}</h3>
-                    <p>{service.description}</p>
+                    <p className='tracking-tight'>{service.description}</p>
                     <div 
                       className="mt-6 flex items-center text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity"
               
