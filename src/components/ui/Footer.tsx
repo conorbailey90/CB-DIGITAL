@@ -4,18 +4,18 @@ const footerLinks = [
   {
     title: 'Services',
     links: [
-      { label: 'Web Design', href: '/services/web-design' },
-      { label: 'Development', href: '/services/development' },
-      { label: 'Digital Strategy', href: '/services/digital-strategy' },
-      { label: 'UI/UX Design', href: '/services/ui-ux-design' },
+      { label: 'Web Design', href: '/services' },
+      { label: 'Development', href: '/services' },
+      { label: 'Digital Strategy', href: '/services' },
+      { label: 'UI/UX Design', href: '/services' },
     ]
   },
   {
     title: 'Company',
     links: [
-      { label: 'About', href: '/about' },
-      { label: 'Projects', href: '/projects' },
-      { label: 'Blog', href: '/blog' },
+      { label: 'About', href: '/#about' },
+      { label: 'Projects', href: '/#projects' },
+      { label: 'Blog', href: '/#blog' },
       { label: 'Contact', href: '/contact' },
     ]
   }
@@ -106,14 +106,14 @@ export function Footer() {
             <p className="text-sm text-white/70 text-center md:text-left">
               {/* © {new Date().getFullYear()} CB Web Design. All rights reserved. */}
             </p>
-            <div className="flex gap-8 md:gap-6">
+            {/* <div className="flex gap-8 md:gap-6">
               <Link href="/privacy" className="text-sm text-white/70 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
               <Link href="/terms" className="text-sm text-white/70 hover:text-white transition-colors">
                 Terms of Service
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

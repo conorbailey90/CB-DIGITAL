@@ -18,7 +18,7 @@ const projects = [
     title: 'BPC Essex',
     description: 'A vibrant e-commerce platform for a local coffee shop, with a focus on user experience and brand storytelling.',
     image: '/images/bpc-mockup.png',
-    link: 'https://www.bricklayingandplasteringcoursesessex.com/',
+    link: 'https://baileys-construction-academy-m8ca.vercel.app/',
     services: [
       'Design', 'Development', 'CMS Integration', 'Database'
     ]
