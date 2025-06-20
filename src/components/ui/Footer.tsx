@@ -36,8 +36,8 @@ export function Footer() {
           <div className="grid grid-cols-12 gap-y-12">
  
             <div className="col-span-12 md:col-span-4 space-y-6">
-              <Link href="/" className="tracking-tighter uppercase text-2xl">
-                <strong>CB </strong>DIGITAL
+              <Link href="/" className="tracking-normal uppercase logo text-6xl">
+                CB DIGITAL
               </Link>
               <div className="space-y-2">
                 <p className="text-sm text-white/70">
@@ -104,16 +104,8 @@ export function Footer() {
           {/* Bottom Bar */}
           <div className="border-t border-white/10 mt-12 md:mt-16 pt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-6 md:gap-4">
             <p className="text-sm text-white/70 text-center md:text-left">
-              {/* © {new Date().getFullYear()} CB Web Design. All rights reserved. */}
             </p>
-            {/* <div className="flex gap-8 md:gap-6">
-              <Link href="/privacy" className="text-sm text-white/70 hover:text-white transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="text-sm text-white/70 hover:text-white transition-colors">
-                Terms of Service
-              </Link>
-            </div> */}
+       
           </div>
         </div>
       </div>
