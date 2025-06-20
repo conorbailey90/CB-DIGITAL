@@ -68,8 +68,8 @@ const Navbar = () => {
   return (
     <header className={`fixed top-0 z-50 w-full flex justify-center items-center ${isActive ? '' : ' mix-blend-difference'}`}>
       <nav className=" w-[95%] py-4 flex justify-between items-center">
-        <Link href="/" className='text-white logo uppercase text-3xl tracking-normal leading-1 pt-2 '>
-          CB DIGITAL
+        <Link href="/" className='text-white uppercase text-xl tracking-tighter leading-1 pt-2 '>
+          <strong>CB</strong> DIGITAL
         </Link>
         <div onClick={menuOpen} className='relative cursor-pointer md:hidden'>
           <p className='text-white'>Menu</p>

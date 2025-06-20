@@ -41,7 +41,7 @@ export default function Hero() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#f5f7fa] to-[#c3cfe2] " />
         <div className="w-[95%] grid grid-cols-12 auto-rows-min pt-24 pb-12 md:pt-24 md:pb-12">
             <div className=" col-span-6">
-              <h1 className="text-8xl mb-4 tracking-normal text-black logo uppercase">CB DIGITAL</h1>
+              <h1 className="text-4xl mb-4 tracking-tighter text-black"><strong>CB </strong>DIGITAL</h1>
               <h5 className="tracking-tighter">Billericay, UK</h5>
               <Time />
   

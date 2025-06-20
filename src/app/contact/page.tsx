@@ -84,7 +84,7 @@ export default function Contact() {
                 <h3 className="text-lg font-medium mb-2 tracking-tighter text-black">Get in touch</h3>
                 <div className="space-y-2">
                   <p className="text-sm tracking-tighter text-black">
-                    <span className="font-medium">Email:</span> hello@baileydigital.co.uk
+                    <span className="font-medium">Email:</span> conbailey90@gmail.com
                   </p>
                   <p className="text-sm tracking-tighter text-black">
                     <span className="font-medium">Phone / WhatsApp:</span> +44 7540 809644

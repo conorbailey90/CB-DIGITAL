@@ -126,7 +126,7 @@ function ServicesOverview() {
       <section className="w-full flex justify-center py-20 bg-gradient-to-br from-[#f5f7fa] to-[#c3cfe2]">
         <div className="w-[95%] max-w-container text-center">
           <h1 className="mb-6 tracking-normal logo uppercase text-7xl md:text-8xl">Our Services</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-normal tracking-tight text-balance">
             Comprehensive digital solutions designed to elevate your brand, engage your audience, and drive sustainable growth through thoughtful design and strategic implementation.
           </p>
         </div>

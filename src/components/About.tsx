@@ -19,14 +19,15 @@ export default function About() {
         </div>
       </div>
       <div className="grid grid-cols-12 w-[95%] py-8 ">
-        <div className="relative  mb-4 col-span-12 md:col-span-4 col-start-1 aspect-video">
+        <div className="relative  mb-4 col-span-12 md:col-span-4 col-start-1 aspect-video" style={{border: '1px solid black'}}>
           <Image
            
-            src="/images/Hero.jpg" 
+            src="/images/workstation.avif" 
             alt="Descriptive alt text"
             fill
             style={{ objectFit: 'cover' }}
             priority
+      
           />
         </div>
         <p className="col-span-8 md:col-span-3 md:col-start-7 text-sm">CB Digital delivers end-to-end digital solutions — from design and development to hosting and support — for businesses that value quality, clarity, and long-term growth.</p>
