@@ -1,7 +1,6 @@
 'use client'
 
 import { CheckCircle } from 'lucide-react'
-import Link from 'next/link'
 
 function BlogPostSEO() {
   const post = {
