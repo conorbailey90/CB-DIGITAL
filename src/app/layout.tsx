@@ -8,8 +8,8 @@ import { Footer } from '@/components/ui/Footer';
 
 
 export const metadata: Metadata = {
-  title: 'CB Web Design | Creative Web Solutions',
-  description: 'CB Web Design crafts stunning, user-focused websites for businesses and creatives.',
+  title: 'CB Digital| Web Design Agecy',
+  description: 'CB Digital crafts stunning, user-focused websites for businesses.',
 };
 
 export default function RootLayout({
