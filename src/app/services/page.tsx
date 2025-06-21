@@ -1,6 +1,7 @@
 'use client'
 
 import { Code, Palette, Server, LayoutGrid, CheckCircle, Users, Zap, Shield, TrendingUp, Star } from 'lucide-react'
+import Link from 'next/link'
 
 function ServicesOverview() {
   const services = [
