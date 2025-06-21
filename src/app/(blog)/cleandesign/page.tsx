@@ -1,6 +1,7 @@
 'use client'
 
 import { CheckCircle } from 'lucide-react'
+import Image from 'next/image'
 
 function BlogPostMinimalDesign() {
   const post = {
@@ -40,19 +41,33 @@ function BlogPostMinimalDesign() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="w-full flex justify-center py-20 bg-gradient-to-br from-[#f5f7fa] to-[#c3cfe2]">
-        <div className="w-[95%] max-w-[800px] text-center">
-          <h1 className="mb-6 tracking-normal logo uppercase text-5xl md:text-6xl">{post.title}</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-normal tracking-tight text-balance">
-            {post.description}
-          </p>
-        </div>
-      </section>
+        <div className="min-h-screen bg-white">
+        {/* Hero Section */}
+        <section className="w-full flex justify-center py-20 bg-gradient-to-br from-[#f5f7fa] to-[#c3cfe2]">
+            <div className="w-[95%] max-w-[800px] text-center">
+            <h1 className="mb-6 tracking-normal logo uppercase text-5xl md:text-6xl">{post.title}</h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-normal tracking-tight text-balance">
+                {post.description}
+            </p>
+            </div>
+        </section>
+        
+        <section className="w-full flex justify-center relative">
+            <div className='relative w-[95%] max-w-[800px] aspect-video overflow-hidden my-2 border border-black'>
+                <Image
+                    src="/images/minimal.avif" 
+                    alt="Minimal design process image"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    priority
+                />
+            </div>
+      
+        </section>
+       
 
       {/* Blog Content Section */}
-      <section className="w-full flex justify-center py-16 border-t border-black/5">
+      <section className="w-full flex justify-center py-16 ">
         <div className="w-[95%] max-w-[800px]">
           {post.sections.map((section, index) => (
             <div key={index} className="mb-12">

@@ -1,6 +1,6 @@
-'use client'
 
 import { CheckCircle } from 'lucide-react'
+import Image from 'next/image'
 
 function BlogPostCustomWebsite() {
   const post = {
@@ -53,6 +53,18 @@ function BlogPostCustomWebsite() {
             {post.description}
           </p>
         </div>
+      </section>
+
+       <section className="w-full flex justify-center relative">
+          <div className='relative w-[95%] max-w-[800px] aspect-video overflow-hidden my-2 border border-black'>
+              <Image
+                  src="/images/rocket.avif" 
+                  alt="Rocket ship image"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  priority
+              />
+          </div>
       </section>
 
       {/* Blog Content Section */}

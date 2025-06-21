@@ -38,7 +38,7 @@ function Services() {
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               {services.map((service, index) => (
-                <Link href={service.href} key={service.title} scroll={true} >
+                <a href={service.href} key={service.title}>
                   <div 
                     className="group relative p-6 shadow-[0_0_0_1px_#c0c0c0] bg-[#ffffff] cursor-pointer h-full transition-all duration-300 hover:bg-gradient-to-br from-[#f5f7fa] to-[#c3cfe2]"
                   
@@ -64,7 +64,7 @@ function Services() {
                       </svg>
                     </div>
                   </div>
-                </Link>
+                </a>
               ))}
             </div>
           </div>

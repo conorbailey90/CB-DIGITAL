@@ -1,6 +1,6 @@
-'use client'
 
 import { CheckCircle } from 'lucide-react'
+import Image from 'next/image'
 
 function BlogPostSEO() {
   const post = {
@@ -50,6 +50,18 @@ function BlogPostSEO() {
           </p>
         </div>
       </section>
+
+        <section className="w-full flex justify-center relative">
+            <div className='relative w-[95%] max-w-[800px] aspect-video overflow-hidden my-2 border border-black'>
+                <Image
+                    src="/images/seo.avif" 
+                    alt="SEO Image"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    priority
+                />
+            </div>
+        </section>
 
       {/* Blog Content Section */}
       <section className="w-full flex justify-center py-16 border-t border-black/5">
