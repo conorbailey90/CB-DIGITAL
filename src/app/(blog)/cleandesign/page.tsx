@@ -71,7 +71,7 @@ function BlogPostMinimalDesign() {
         <div className="w-[95%] max-w-[800px]">
           {post.sections.map((section, index) => (
             <div key={index} className="mb-12">
-              <h2 className="text-xl mb-4 tracking-tights">{section.title}</h2>
+              <h2 className="text-lg mb-4 tracking-tights">{section.title}</h2>
               {Array.isArray(section.content) ? (
                 <ul className="space-y-4">
                   {section.content.map((item, idx) => (
