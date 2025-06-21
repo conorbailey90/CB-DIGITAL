@@ -8,7 +8,7 @@ import { Footer } from '@/components/ui/Footer';
 
 
 export const metadata: Metadata = {
-  title: 'CB Digital| Web Design Agecy',
+  title: 'CB Digital | Web Design Agecy',
   description: 'CB Digital crafts stunning, user-focused websites for businesses.',
 };
 
