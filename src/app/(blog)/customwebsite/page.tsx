@@ -72,7 +72,7 @@ function BlogPostCustomWebsite() {
         <div className="w-[95%] max-w-[800px]">
           {post.sections.map((section, index) => (
             <div key={index} className="mb-12">
-              <h2 className="text-3xl mb-4 tracking-tight ">{section.title}</h2>
+              <h2 className="text-xl mb-4 tracking-tight ">{section.title}</h2>
               {Array.isArray(section.content) ? (
                 <ul className="space-y-4">
                   {section.content.map((item, idx) => (
