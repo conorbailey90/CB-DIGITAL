@@ -1,11 +1,11 @@
 'use client'
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import Time from "./ui/Time";
 import gsap from "gsap";
 
 export default function Hero() {
-
+  const [isLoaded, setIsLoaded] = useState(false)
   const trigger = useRef<HTMLDivElement | null>(null);
   const target = useRef<HTMLDivElement | null>(null);
 
@@ -28,6 +28,8 @@ export default function Hero() {
         }
       );
 
+      setIsLoaded(true)
+
       // Cleanup on unmount
       return () => {
         animation.scrollTrigger?.kill(); // Kill the specific ScrollTrigger instance
@@ -36,7 +38,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="hero" className="relative flex flex-col items-center w-full">
+    <section id="hero" className={`transition-opacity duration-150 relative flex flex-col items-center w-full ${isLoaded ?  'opacity-100' : 'opacity-0'}`}>
       <div className="relative w-full flex justify-center">
         <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#f5f7fa] to-[#c3cfe2] " />
         <div className="w-[95%] grid grid-cols-12 auto-rows-min pt-24 pb-12 md:pt-24 md:pb-12">
